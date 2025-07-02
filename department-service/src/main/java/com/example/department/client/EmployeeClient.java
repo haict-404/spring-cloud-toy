@@ -5,7 +5,7 @@ import java.util.List;
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.web.bind.annotation.GetMapping;
 
-@FeignClient(name = "department-service")
+@FeignClient(name = "employee-service")
 public interface EmployeeClient {
   @GetMapping("/employees")
   List<Employee> getEmployees();

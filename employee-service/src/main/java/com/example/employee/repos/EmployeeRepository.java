@@ -1,6 +1,5 @@
 package com.example.employee.repos;
 
-import com.example.employee.entity.Department;
 import com.example.employee.entity.Employee;
 import jakarta.annotation.PostConstruct;
 import java.util.ArrayList;

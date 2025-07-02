@@ -1,7 +1,6 @@
 package com.example.employee.entity;
 
 import java.util.List;
-import java.util.UUID;
 import lombok.Builder;
 import lombok.Data;
 
