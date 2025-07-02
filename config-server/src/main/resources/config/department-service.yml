@@ -14,3 +14,10 @@ logging:
   pattern:
     console: "%clr(%d{yyyy-MM-dd HH:mm:ss}){blue} %clr([%X{traceId:-},%X{spanId:-}]){cyan} %clr(${LOG_LEVEL_PATTERN:-%5p}) %m%n"
 
+management:
+  tracing:
+    sampling:
+      probability: 1.0  # 100% trace, chỉ dùng dev/test
+  zipkin:
+    tracing:
+      endpoint: http://localhost:9411/api/v2/spans

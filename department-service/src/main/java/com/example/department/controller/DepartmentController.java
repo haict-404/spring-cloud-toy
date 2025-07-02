@@ -16,14 +16,14 @@ public class DepartmentController {
   private final EmployeeClient employeeClient;
 
   @GetMapping("/departments")
-  public List<Department> getDepartments() {
+  public List<Department> getDepartments() throws InterruptedException {
     List<Department> result = departmentRepository.findAll();
     List<Employee> employees = employeeClient.getEmployees();
 
     result.forEach(item -> {
       item.setEmployees(employees);
     });
-
+    Thread.sleep(2000); // Simulate a delay for testing purposes
     return result;
   }
 }
