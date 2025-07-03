@@ -14,7 +14,10 @@ eureka:
 logging:
   pattern:
     console: "%clr(%d{yyyy-MM-dd HH:mm:ss}){blue} %clr(${LOG_LEVEL_PATTERN:-%5p}) %m%n"
-
+  level:
+    root: INFO
+  logstash:
+    enabled: true
 management:
   tracing:
     sampling:
